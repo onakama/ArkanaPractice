@@ -9,12 +9,13 @@ import SwiftUI
 import ArkanaKeys
 
 struct ContentView: View {
+    let mySecretAPIKey = ArkanaKeys.Global().mySecretAPIKey
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(mySecretAPIKey)
         }
         .padding()
     }
