@@ -11,6 +11,7 @@
 		9C4A99D22A428C0300DD2613 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A99D12A428C0300DD2613 /* ContentView.swift */; };
 		9C4A99D42A428C0400DD2613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A99D32A428C0400DD2613 /* Assets.xcassets */; };
 		9C4A99D72A428C0400DD2613 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A99D62A428C0400DD2613 /* Preview Assets.xcassets */; };
+		9CD93BD82A428F6900C31FF8 /* ArkanaKeys in Frameworks */ = {isa = PBXBuildFile; productRef = 9CD93BD72A428F6900C31FF8 /* ArkanaKeys */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9C4A99D12A428C0300DD2613 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9C4A99D32A428C0400DD2613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C4A99D62A428C0400DD2613 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CD93BD52A428F6000C31FF8 /* ArkanaKeys */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ArkanaKeys; path = ArkanaKeys/ArkanaKeys; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD93BD82A428F6900C31FF8 /* ArkanaKeys in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +38,10 @@
 		9C4A99C32A428C0300DD2613 = {
 			isa = PBXGroup;
 			children = (
+				9CD93BD42A428F6000C31FF8 /* Packages */,
 				9C4A99CE2A428C0300DD2613 /* ArkanaPractice */,
 				9C4A99CD2A428C0300DD2613 /* Products */,
+				9CD93BD62A428F6900C31FF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9CD93BD42A428F6000C31FF8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9CD93BD52A428F6000C31FF8 /* ArkanaKeys */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		9CD93BD62A428F6900C31FF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = ArkanaPractice;
+			packageProductDependencies = (
+				9CD93BD72A428F6900C31FF8 /* ArkanaKeys */,
+			);
 			productName = ArkanaPractice;
 			productReference = 9C4A99CC2A428C0300DD2613 /* ArkanaPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +362,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9CD93BD72A428F6900C31FF8 /* ArkanaKeys */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ArkanaKeys;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C4A99C42A428C0300DD2613 /* Project object */;
 }

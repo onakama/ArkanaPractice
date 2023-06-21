@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ArkanaKeys
 
 struct ContentView: View {
     var body: some View {
